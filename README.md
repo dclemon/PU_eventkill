@@ -8,3 +8,6 @@
 3.进行一次活动报名并抓包
 3.根据URL找的相应的包名，替换掉cookie和content-type以及body部分
 4.需要微信推送的话，修改pushplus_submit里的token部分
+
+已经配置好dockerfile，需要放到服务器上的话自己打包即可
+docker build -t pu .
