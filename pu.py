@@ -102,7 +102,7 @@ def step1_3():
         for re in res:
             print(re)
             t = time.time()
-            if t < int(re['startline']):
+            if t < int(re['startline']) and re not in submit_list:
                 print('发现可报名活动，加入队列！')
                 submit_list.append(re)
                 pushplus_send('发现一个可以报名的活动！', '活动信息：' + str(re))
